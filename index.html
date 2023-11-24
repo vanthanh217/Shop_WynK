@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WynK</title>
+    <link rel="shortcut icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/11641/11641444.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="./assets/gobal.css">
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header">
+                <div class="header__main animation-header">
+                    <div class="logo">
+                        <span class="logo-text">WynK</span>
+                    </div>
+                    <div class="header-mid">
+                        <form action="" class="search-form">
+                            <i class='bx bx-search'></i>
+                            <input class="search" id="search-input" type="text" placeholder="Search items, products...">
+                        </form>
+                    </div>
+                    <div class="header-right">
+                        <button class="switch-dark-light">
+                            <i class='bx bx-moon'></i>
+                        </button>
+                        <button class="header-user">
+                            <i class='bx bx-user'></i>
+                        </button>
+                        <button class="header-cart">
+                            <a href="" id="cart">
+                                <i class='bx bx-cart-alt'></i>
+                                <span class="cart-notice">0</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <aside class="cart-items">
+        <div class="cart-items__layout">
+            <div class="cart-items__header">
+                <span>Your Cart</span>
+                <a href="">&times;</a>
+            </div>
+            <hr class="header-underline">
+        </div>
+    </aside>
+    <div class="overlay"></div>
+
+    <nav class="navbar">
+        <ul>
+            <li>
+                <a href="#" class="active-nav">All</a>
+            </li>
+            <li>
+                <a href="#">Card</a>
+            </li>
+            <li>
+                <a href="#">Clothes</a>
+            </li>
+            <li>
+                <a href="#">Toys</a>
+            </li>
+            <li>
+                <a href="#">Sales</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="banner">
+        <img src="https://images.unsplash.com/photo-1692610365998-c628604f5d9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80"
+            alt="">
+    </div>
+
+    <div class="category">
+        <div class="category__wrapper">
+            <ul class="category__list">
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1867/1867646.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">T-Shirt</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2390/2390064.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Dress</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/2390/2390061.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Jackets</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9404/9404710.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Shoes</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/3773/3773908.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Shorts & Jeans</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/1785/1785384.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Glasses</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9572/9572615.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Watch</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="category__item">
+                    <div class="category__item-img">
+                        <img src="https://cdn-icons-png.flaticon.com/128/9753/9753952.png" alt="">
+                    </div>
+                    <div class="category__item-box">
+                        <div class="category__item-content">
+                            <h3 class="category__item-title">Hat & Caps</h3>
+                            <a href="" class="category__item-show">Show all</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="product-featured">
+        <h2 class="title">Deal of the day</h2>
+        <div class="product-featured__wrapper">
+            <div class="showcase-container">
+                <div class="showcase">
+                    <div class="showcase__banner">
+                        <img src="https://cdn.tgdd.vn/Products/Images/7264/313053/citizen-bu0060-09h-nam-1.jpg"
+                            alt="Citizen 42mm Men's Watch BU0060-09H" class="showcase__image">
+                    </div>
+                    <div class="showcase__content">
+                        <div class="showcase-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <a href="">
+                            <h3 class="showcase__title">Citizen 42mm Men's Watch BU0060-09H</h3>
+                        </a>
+                        <p class="showcase__desc">
+                            The Men's 42mm Citizen watch BU0060-09H displays the full day,
+                            month, and moonphase calendar at a 6 o'clock angle. All details on the dial are meticulously
+                            completed by circular or concentric pattern patterns and balanced arrangement to create a
+                            harmonious and luxurious whole
+                        </p>
+                        <div class="price-box">
+                            <span class="price">$704.86</span>
+                            <del>$881.07</del>
+                        </div>
+                        <button class="showcase__btn">Add To Cart</button>
+                        <div class="showcase-status">
+                            <div class="wrapper">
+                                <p>
+                                    already sold: <b>25</b>
+                                </p>
+                                <p>
+                                    available:
+                                    <b>50</b>
+                                </p>
+                            </div>
+                            <div class="showcase-status-bar"></div>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-desc">
+                                Hurry Up! Offer ends in:
+                            </span>
+                            <div class="countdown">
+                                <div class="countdown__content">
+                                    <p class="display-number" id="days">360</p>
+                                    <p class="display-text">Days</p>
+                                </div>
+                                <div class="countdown__content">
+                                    <p class="display-number" id="hours">21</p>
+                                    <p class="display-text">Hours</p>
+                                </div>
+                                <div class="countdown__content">
+                                    <p class="display-number" id="mins">45</p>
+                                    <p class="display-text">Min</p>
+                                </div>
+                                <div class="countdown__content">
+                                    <p class="display-number" id="secs">50</p>
+                                    <p class="display-text">Sec</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="showcase-container">
+                <div class="showcase">
+                    <div class="showcase__banner">
+                        <img src="https://www.owndays.com/storage/products/9c6824f1-e48a-40d6-aa71-f175f8ba2383.webp"
+                            alt="SNP1016N-2S C1" class="showcase__image">
+                    </div>
+                    <div class="showcase__content">
+                        <div class="showcase-rating">
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bxs-star'></i>
+                            <i class='bx bx-star'></i>
+                        </div>
+                        <a href="">
+                            <h3 class="showcase__title">SNP1016N-2S C1</h3>
+                        </a>
+                        <p class="showcase__desc">
+                            Frames with magnetically clipped sunscreen lenses Easily turn your eyeglasses into
+                            sunglasses. The popular Wellington frame comes in new colors to match your style.
+                        </p>
+                        <div class="price-box">
+                            <span class="price">$71.77</span>
+                            <del>$114.00</del>
+                        </div>
+                        <button class="showcase__btn">Add To Cart</button>
+                        <div class="showcase-status">
+                            <div class="wrapper">
+                                <p>
+                                    already sold: <b>25</b>
+                                </p>
+                                <p>
+                                    available:
+                                    <b>50</b>
+                                </p>
+                            </div>
+                            <div class="showcase-status-bar"></div>
+                        </div>
+                        <div class="countdown-box">
+                            <span class="countdown-desc">
+                                Hurry Up! Offer ends in:
+                            </span>
+                            <div class="countdown">
+                                <div class="countdown__content">
+                                    <p class="display-number" id="days">360</p>
+                                    <p class="display-text">Days</p>
+                                </div>
+                                <div class="countdown__content">
+                                    <p class="display-number" id="hours">21</p>
+                                    <p class="display-text">Hours</p>
+                                </div>
+                                <div class="countdown__content">
+                                    <p class="display-number" id="mins">45</p>
+                                    <p class="display-text">Min</p>
+                                </div>
+                                <div class="countdown__content">
+                                    <p class="display-number" id="secs">50</p>
+                                    <p class="display-text">Sec</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="container">
+        <div class="products">
+            <div class="product-title">
+                <h3>New Products</h3>
+            </div>
+            <div class="list-products">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="product-title">
+                <h3>Sale</h3>
+            </div>
+            <div class="list-products">
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <img src="https://images.unsplash.com/photo-1669642186275-cabf8e6b43e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+                            alt="">
+                    </div>
+                    <span class="card__title">
+                        Car
+                    </span>
+                    <div class="card__bottom">
+                        <span class="card__price">
+                            $500
+                        </span>
+                        <button class="card__btn">
+                            <a href="">
+                                <i class='bx bx-cart-alt'></i>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__list">
+            <div class="footer__list-left">
+                <span>Join our mailing list to keep up to date with our latest information and products.</span>
+                <h5>Subscribe Receive Information</h5>
+                <form action="">
+                    <input type="email" name="" placeholder="Email Address">
+                    <button>Subscribe</button>
+                </form>
+            </div>
+            <div class="footer__list-right">
+                <div class="about-us">
+                    <h5>ABOUT US</h5>
+                    <ul>
+                        <li>
+                            <a href="">Explore</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Jobs</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="customer-service">
+                    <h5>CUSTOMER SERVICE</h5>
+                    <ul>
+                        <li>
+                            <a href="">Support Center</a>
+                        </li>
+                        <li>
+                            <a href="">Return Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Customer Loyalty Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Payment Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Warranty Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Customer Information Security Policy</a>
+                        </li>
+                        <li>
+                            <a href="">Cookie Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h5>CONTACT</h5>
+                    <ul>
+                        <li>
+                            <i class='bx bxl-gmail'></i>
+                            <a href="">vkent2107@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class='bx bxs-phone'></i>
+                            <a href="">0835913025</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="footer__bottom-left">
+                <ul>
+                    <li>
+                        <a href="">Pricacy</a>
+                    </li>
+                    <li>
+                        <a href="">Security</a>
+                    </li>
+                    <li>
+                        <a href="">Terms & Condition</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__bottom-right">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-youtube'></i>
+                <i class='bx bxl-tiktok'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-twitter'></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
