@@ -164,7 +164,7 @@
     });
 
     $("#header-mb .close-sidebar .bx").click(() => {
-      $("#header-mb .sidebar").css("left", "-100%");
+      $("#header-mb .sidebar").css("left", "-120%");
     });
   });
 }
