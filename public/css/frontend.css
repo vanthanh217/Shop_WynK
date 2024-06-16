@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&display=swap");
 
 :root {
   --bg-color: #f8fafc;
@@ -32,7 +32,7 @@
 html {
   font-size: 62.5%;
   line-height: 1.4rem;
-  font-family: "Barlow", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
   box-sizing: border-box;
 }
 
@@ -1461,6 +1461,8 @@ header .menu-right .menu-item a:hover {
 header .header-group .header-search {
   position: relative;
   flex: 1;
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 #search-mini-laptop {
@@ -1529,6 +1531,7 @@ header .header-group .header-search .btn-search .bx {
 }
 
 header .header-group .header-right {
+  max-width: 16%;
   min-width: 16%;
   display: flex;
   align-items: center;
@@ -2277,6 +2280,7 @@ section.footer-news
   border: 1px solid var(--gray);
   border-radius: 8px;
   caret-color: var(--text-color);
+  color: var(--text-color);
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
@@ -3819,6 +3823,12 @@ main.post_detail-page .post-detail__content p:has(img) {
   margin: 8px 0;
 }
 
+main.post_detail-page .post-detail__content p > img {
+  width: 500px;
+  height: 500px;
+  object-fit: cover;
+}
+
 main.post_detail-page .ra-heading {
   font-size: 2.8rem;
   line-height: 150%;
@@ -3895,6 +3905,7 @@ main.product-category .sidebar-title {
   font-size: 2.5rem;
   font-weight: 600;
   line-height: 150%;
+  text-transform: uppercase;
 }
 
 main.product .collection-list,
@@ -4001,6 +4012,101 @@ main.product-category .cat-list .cat-title {
 main.product .cat-list .cat-title:hover,
 main.product-category .cat-list .cat-title:hover {
   color: var(--primary-color);
+}
+
+main.product .product-new,
+main.product-category .product-new {
+  margin-top: 16px;
+}
+
+main.product .product-new__heading,
+main.product-category .product-new__heading {
+  margin-bottom: 16px;
+  padding: 0 16px;
+  font-size: 2.5rem;
+  line-height: 150%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+main.product .product-new__group-item,
+main.product-category .product-new__group-item {
+  margin-bottom: 16px;
+  background-color: var(--card-bg);
+  box-shadow: var(--shadow);
+  border-radius: 10px;
+}
+
+main.product .product-new .product-new__item,
+main.product-category .product-new .product-new__item {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+main.product .product-new .product-new__item-image a,
+main.product-category .product-new .product-new__item-image a {
+  display: block;
+  color: var(--text-color);
+  font-size: 1.425rem;
+  line-height: 120%;
+}
+
+main.product .product-new .product-new__item-thumb,
+main.product-category .product-new .product-new__item-thumb {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+main.product .product-new .product-new__item-content,
+main.product-category .product-new .product-new__item-content {
+  flex: 1;
+}
+
+main.product .product-new .product-new__item-name,
+main.product-category .product-new .product-new__item-name {
+  margin-bottom: 8px;
+}
+
+main.product .product-new .product-new__item-name a,
+main.product-category .product-new .product-new__item-name a {
+  width: 200px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 2rem;
+  line-height: 150%;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+main.product .product-new .product-new__item-name a:hover,
+main.product-category .product-new .product-new__item-name a:hover {
+  color: var(--primary-color);
+}
+
+main.product .product-new .product-new__item-price,
+main.product-category .product-new .product-new__item-price {
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+main.product .product-new .product-new__item-price .price,
+main.product-category .product-new .product-new__item-price .price {
+  font-size: 1.6rem;
+  color: var(--slate-500);
+}
+
+main.product .product-new .product-new__item-price .sale-price,
+main.product-category .product-new .product-new__item-price .sale-price {
+  font-size: 1.875rem;
+  font-weight: 600;
 }
 
 main.product .collection .collection-sort,
